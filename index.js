@@ -3,7 +3,6 @@ var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
 var app = express();
-var Agent = require('./lib/Agent');
 var ScrapHelper = require('./lib/ScrapHelper');
 
 app.use(express.static('public'));
