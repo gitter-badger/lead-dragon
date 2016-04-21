@@ -45,9 +45,9 @@ app.get('/', function (req, res) {
   res.render('home', { q: query, count: count, email: email });
 });
 
-
-app.listen('80')
-console.log('Magic happens on port 80');
+var port = process.env.PORT || 3000;
+app.listen(port);
+console.log('Magic happens on port '+port);
 exports = module.exports = app;
 
 
