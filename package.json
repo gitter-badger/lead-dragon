@@ -12,7 +12,6 @@
     "express"    : "latest",
     "request"    : "latest",
     "cheerio"    : "latest",
-    "socks5-client": "latest",
     "ejs" : "latest"
   }
 }

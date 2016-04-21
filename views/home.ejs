@@ -1,0 +1,85 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Simplest lead generator</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <link rel="stylesheet" href="css/github-prettify-theme.css">
+    <script src="js/site.js"></script>
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+  </head>
+
+  <body class="code-snippets-visible">
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+      <section class="header">
+        <h2 class="title">A dead simple, lead generator</h2>
+      </section>
+
+      <!-- Forms -->
+      <div class="docs-section" id="forms">
+        <div class="docs-example docs-example-forms">
+          <form action="/" method="GET">
+            <div class="row">
+              <div class="four columns">
+                <label for="exampleEmailInput">I want leads for</label>
+                <input name="q" class="u-full-width" type="search" placeholder="hotels in mumbai" id="exampleRecipientInput" value="<%= query %>">
+              </div>
+              <div class="four columns">
+                <label for="exampleEmailInput">Total leads needed</label>
+                <input name="count" class="u-full-width" type="number" placeholder="100" id="exampleRecipientInput" value="<%= count %>">
+              </div>
+              <div class="four columns">
+                <label for="exampleEmailInput">Send me leads on this email</label>
+                <input name="email" class="u-full-width" type="email" placeholder="sales@mycompany.com" id="exampleEmailInput" value="<%= email %>">
+              </div>
+            </div>
+            <p style="text-align: center;">Tip: Search for your keyword on google first.<br/>Search for 200 total leads per hour allowed, spammers will be blocked forever.</p>
+            <% if (typeof q != 'undefined' && q) { %>
+            <br/>
+          <p style="font-weight: bold;text-align: center; color: #1EAEDB;"> Lead generation for "<%= q %>" started.<br/>It takes some time, we will email you the data once done.</p> 
+        <% } %>
+            <br/>
+            <div style="text-align: center;">
+              <input class="button" type="submit" value="Get Leads">
+              </div>
+          </form>
+        </div>
+
+
+      
+
+
+  </body>
+
+  </html>
