@@ -1,0 +1,18 @@
+{
+  "name"         : "lead-dragon",
+  "version"      : "0.0.1",
+  "description"  : "generate leads, scrapping",
+  "main"         : "index.js",
+  "author"       : "anonymousguy",
+  "repository"   : {
+    "type" : "git",
+    "url"  : "https://github.com/anonymousguy/lead-dragon"
+  },
+  "dependencies" : {
+    "express"    : "latest",
+    "request"    : "latest",
+    "cheerio"    : "latest",
+    "socks5-client": "latest",
+    "ejs" : "latest"
+  }
+}
